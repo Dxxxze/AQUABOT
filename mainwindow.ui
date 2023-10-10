@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2500</width>
+    <height>1300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AQUABOT</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="locale">
+   <locale language="English" country="UnitedStates"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2486</width>
+         <height>1247</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="4" column="7">
+         <widget class="QComboBox" name="plotDisplay">
+          <property name="styleSheet">
+           <string notr="true">font: 12pt &quot;Calibri&quot;;
+background-color: white;</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Drone 1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 4</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 5</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 6</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 7</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 8</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QCustomPlot" name="tempPlot" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>830</width>
+            <height>225</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>830</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" rowspan="3">
+         <widget class="QCustomPlot" name="salinityPlot" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>830</width>
+            <height>225</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>830</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="12">
+         <widget class="QCheckBox" name="autoUpdate">
+          <property name="minimumSize">
+           <size>
+            <width>160</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>160</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Auto Update</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QComboBox" name="selectCenter">
+          <property name="minimumSize">
+           <size>
+            <width>120</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>120</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 12pt &quot;Calibri&quot;;
+background-color: white;</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Drone 1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 4</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 5</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 6</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 7</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 8</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="5" column="3">
+         <widget class="QPushButton" name="selectDestination">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: white;
+font: 12pt &quot;Calibri&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Select Destination</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" rowspan="4" colspan="12">
+         <widget class="QQuickWidget" name="map">
+          <property name="resizeMode">
+           <enum>QQuickWidget::SizeRootObjectToView</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="10">
+         <widget class="QPushButton" name="recallAll">
+          <property name="minimumSize">
+           <size>
+            <width>120</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>120</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: white;
+font: 12pt &quot;Calibri&quot;;
+color: black;
+
+</string>
+          </property>
+          <property name="text">
+           <string>Recall All</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QTableWidget" name="tableWidget">
+          <property name="minimumSize">
+           <size>
+            <width>830</width>
+            <height>425</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>830</width>
+            <height>430</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QTableWidget {
+	alternate-background-color: #EEEEEE;
+}</string>
+          </property>
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="dragEnabled">
+           <bool>true</bool>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+          <row>
+           <property name="text">
+            <string>Drone 1</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Drone 2</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Drone 3</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Drone 4</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Drone 5</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Drone 6</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Drone 7</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>Drone 8</string>
+           </property>
+          </row>
+          <column>
+           <property name="text">
+            <string>pH</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Temperature</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Salinity</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>GPS</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Direction</string>
+           </property>
+          </column>
+          <item row="0" column="0">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="0" column="1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="0" column="2">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="0" column="3">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="1" column="0">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="1" column="1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="1" column="2">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="1" column="3">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="2" column="0">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="2" column="1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="2" column="2">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="2" column="3">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="3" column="0">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="3" column="1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="3" column="2">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="3" column="3">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="4" column="0">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="4" column="1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="4" column="2">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="4" column="3">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="5" column="0">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="5" column="1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="5" column="2">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="5" column="3">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="6" column="0">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="6" column="1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="6" column="2">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="6" column="3">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="7" column="0">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="7" column="1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="7" column="2">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="7" column="3">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="5" column="6">
+         <widget class="QPushButton" name="cancel">
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>90</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	background: #ff5e5e;
+	font: 12pt &quot;Calibri&quot;;
+	color: #FFFFFF;
+}</string>
+          </property>
+          <property name="text">
+           <string>CANCEL</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLabel" name="label">
+          <property name="minimumSize">
+           <size>
+            <width>210</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>210</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::RightToLeft</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Select Display Center: </string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="4">
+         <widget class="QSpinBox" name="droneSize">
+          <property name="minimumSize">
+           <size>
+            <width>50</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 12pt &quot;Calibri&quot;;
+background-color: white;</string>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>5</number>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="6">
+         <widget class="QLabel" name="label_4">
+          <property name="styleSheet">
+           <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Plot: </string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="8">
+         <widget class="QPushButton" name="start">
+          <property name="minimumSize">
+           <size>
+            <width>80</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>80</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	background: #82aa5a;
+	font: 12pt &quot;Calibri&quot;;
+	color: #FFFFFF;
+}</string>
+          </property>
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="text">
+           <string>START</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="3">
+         <widget class="QLabel" name="label_3">
+          <property name="minimumSize">
+           <size>
+            <width>120</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>120</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Drone Size: </string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="5">
+         <widget class="QPushButton" name="go">
+          <property name="minimumSize">
+           <size>
+            <width>80</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>80</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	background: #82aa5a;
+	font: 12pt &quot;Calibri&quot;;
+	color: #FFFFFF;
+}</string>
+          </property>
+          <property name="text">
+           <string>GO TO</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QCustomPlot" name="pHPlot" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>830</width>
+            <height>225</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>830</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLabel" name="label_2">
+          <property name="minimumSize">
+           <size>
+            <width>210</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>210</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 12pt &quot;Calibri&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Select Swarm Pattern: </string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="9">
+         <widget class="QPushButton" name="stop">
+          <property name="minimumSize">
+           <size>
+            <width>80</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>80</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: #ff5e5e;
+font: 12pt &quot;Calibri&quot;;
+color: #FFFFFF;
+
+</string>
+          </property>
+          <property name="text">
+           <string>STOP</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="7">
+         <widget class="QComboBox" name="selectStartStop">
+          <property name="minimumSize">
+           <size>
+            <width>120</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>120</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 12pt &quot;Calibri&quot;;
+background-color: rgb(255, 255, 255);</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Swarm</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 4</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 5</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 6</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 7</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 8</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <widget class="QComboBox" name="selectPattern">
+          <property name="minimumSize">
+           <size>
+            <width>80</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>80</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 12pt &quot;Calibri&quot;;
+background-color: white;</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Line</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Grid</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="5" column="4">
+         <widget class="QComboBox" name="select">
+          <property name="minimumSize">
+           <size>
+            <width>120</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>120</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 12pt &quot;Calibri&quot;;
+background-color: white;</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Swarm</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 4</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 5</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 6</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 7</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Drone 8</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2500</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSetup">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionSetup"/>
+   </widget>
+   <addaction name="menuSetup"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSetup">
+   <property name="text">
+    <string>Setup</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QQuickWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">QtQuickWidgets/QQuickWidget</header>
+  </customwidget>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
